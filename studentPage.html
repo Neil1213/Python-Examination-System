@@ -1,0 +1,36 @@
+<html>
+      <link rel="stylesheet" href="instructorpagestyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+    <script src="studentExam.js">
+    </script>
+ <body onload=(console.log(listExams()))> 
+        <ul>
+  <li><a class="active" href="studentPage.html">Home</a></li>
+  <li><a href="./examViewGrade.html">View Grades</a></li>
+  <li><a href="./login.html">Logout</a></li>
+</ul>  
+<div class='container'>
+   
+  <div class='header'><h2>Student Portal</h2>
+
+</div>
+  <div class="body-container">
+    <div class='studentcolumn1'>
+    Choose Exam 
+           <div class="examHolder">
+           
+           
+           
+           </div>
+        </div>
+    <div class='studentcolumn2'>Take Exam
+      <div class="examArea">
+      </div>
+      <input type="button" value="Submit Exam" name="Submit Exam" id="examButton" onclick="submitExam()">
+    </div>
+      
+  </div>
+
+</div>
+</body> 
+</html>

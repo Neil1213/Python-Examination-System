@@ -1,0 +1,113 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="instructorpagestyle.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+     <script src="questionBank.js"></script>
+      
+</head>
+ <body> 
+      <ul>
+  <li><a class="active" href="instructorPage.html">Home</a></li>
+  <li><a href="./exam.html">Exams</a></li>
+  <li><a href="./examReview.html">Post Grades</a></li>
+  <li><a href="./login.html">Logout</a></li>
+</ul>  
+<div class='container'>
+   
+  <div class='header'><h2>Instructor Portal</h2>
+
+</div>
+  <div class="body-container">
+    <div class='column1'>
+    <div class="formHolder">
+        <H1>Exam Questions Generator</H1>
+        <form method="POST">
+        <b>Function Name:</b> <input class="finput"  type="text" id="Signature" name="Signature"><br>
+            <b>Enter function:</b><br>
+            <textarea  rows="10" cols="50" class="finput2"type="text" id="Question" name="Question"></textarea>
+        <br>
+            <div>
+<h3>Question Diffculty:</h3>
+<input type="radio" name="Difficulty" value="Easy"> Easy
+  <input type="radio" name="Difficulty" value="Medium"> Medium
+  <input type="radio" name="Difficulty" value="Hard"> Hard
+        </div> 
+ <div>
+<h3>Question Topic:</h3>
+  <input type="radio" name="Category" value="Methods">Methods
+   <input type="radio" name="Category" value="Loops">Loops 
+<input type="radio" name="Category" value="Dictionary">Dictionary
+     <br>
+     
+         <h3>Constraints:</h3>
+  <input id = "while" type="checkbox" name="Constraints" value="While">While
+  <input id = "for" type="checkbox" name="Constraints" value="For">For
+     <input id = "print" type="checkbox" name="Constraints" value="Print">Print
+     <input id = "return" type="checkbox" name="Constraints" value="Return" checked>Return
+     
+        </div> 
+    <br>
+    <div class="testCase">
+     <button name="Add Testcases" value="AddTestCase" onclick="console.log(addTestCases())" >Add TestCases</button><br>
+     <b>Test Case:</b> <input class="testCaseInput"  type="text" id="TestCase1" name="Testcase">     <b>Result:</b> <input class="result"  type="text" id="" name="Anwser"><br>
+     <b>Test Case:</b> <input class="testCaseInput"  type="text" id="TestCase2" name="Testcase">     <b>Result:</b> <input class="result"  type="text" id="Anwser" name="Anwser"><br>
+   
+    </div>
+  <input type="submit" class="Submit" value="Submit Question" onclick="console.log(sendQuestion(this.form))">
+        </form>
+        </div>
+      </div>
+    <div class='column2'>
+         <div class="filterHolder">
+                <br>
+          <div style="display:inline;" class="filerSeach">
+              <b>Search:</b><input class="finput" placeholder="Search Keywords" type="search" id="Search" name="Search" >
+              <select name = "filterD">
+                <option value = "">Difficulty</option>
+                <option value = "Easy">Easy</option>
+                <option value = "Medium">Medium</option>
+                <option value = "Hard">Hard</option>
+              </select>
+              <select name = "filterCA">
+                <option value = "">Categories</option>
+                <option value = "Methods">Methods</option>
+                <option value = "Loops">Loops</option>
+                <option value = "Arrays">Arrays</option>
+                <option value = "Dictionary">Dictionary</option>
+              </select>
+              <select name = "filterCS">
+                <option value = "">Constraints</option>
+                <option value = "For">For</option>
+                <option value = "While">While</option>
+                <option value = "Print">Print</option>
+                <option value = "Return">Return</option>
+              </select>
+          </div>
+ <!--<input type="checkbox" name="filterC" value="While">While
+  <input type="checkbox" name="filterC" value="For">For
+     <input type="checkbox" name="filterC" value="Print">Print
+     <input type="checkbox" name="filterC" value="Return" checked>Return
+     <br>
+        </div>  
+<b>Question Diffculty:</b><input type="radio" name="filterD" value="Easy"> Easy
+  <input type="radio" name="Difficulty" value="filterD"> Medium
+  <input type="radio" name="Difficulty" value="filterD"> Hard
+          <br>
+          <br>
+ <div style="display:inline;" class="filtersApplied"><p class="filtersApplied" style="display:inline;">Filters Applied:<button id="filterButton"class="fas fa-times"></button></p></div>
+      
+        </div>-->
+        <div class="questionBank">
+        
+    
+        </div>
+     
+      </div>
+      
+  </div>
+
+</div>
+<script src="filter.js"></script>
+</body> 
+</html>

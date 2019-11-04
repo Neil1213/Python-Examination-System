@@ -1,0 +1,37 @@
+<html>
+      <link rel="stylesheet" href="instructorpagestyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+    <script src="reviewExam.js">
+    </script>
+ <body onload=(console.log(listExams()))> 
+        <ul>
+            <li><a class="active" href="instructorPage.html">Home</a></li> 
+            <li><a href="./exam.html">Exams</a></li>
+            <li><a href="./examReview.html">Post Grades</a></li>
+            <li><a href="./login.html">Logout</a></li>
+</ul>  
+<div class='container'>
+   
+  <div class='header'><h2>Instructor Portal</h2>
+
+</div>
+  <div class="body-container">
+    <div class='studentcolumn1'>
+    Choose Exam To Grade:
+           <div class="examHolder" style="padding-left: 10px;">
+           
+           
+           
+           </div>
+        </div>
+    <div class='studentcolumn2'>Update Feedback/Release Grades
+      <div class="examArea">
+      </div>
+      <input type="button" value="Release Grades" name="Submit Exam" id="examButton" onclick="updateGrade()">
+    </div>
+      
+  </div> 
+
+</div>
+</body> 
+</html>

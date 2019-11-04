@@ -1,0 +1,27 @@
+<html>
+<script src="login.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+<head>
+    <div class="header">
+<h1>NJIT Exam Portal</h1> 
+    </div>
+</head>   
+    
+<body>
+<div class="login_container">
+
+<form class="login_form"method="POST">
+<h2 id="login_Text">Login</h2>
+  <b>Username:</b> <input class="finput"  type="text" id="ucid" name="ucid"><br>
+  <b>Password:</b> <input class="finput2"type="password" id="pass" name="pass"><br>
+  <input class="loginButton" type="button" onclick="console.log(loginValidator(this.form))" value="Sign in"/>
+</form>
+    </div>
+<br>
+<div id="errorHolder"> </div>
+</body>
+
+</html>

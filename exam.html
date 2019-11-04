@@ -1,0 +1,62 @@
+<html>
+      <link rel="stylesheet" href="instructorpagestyle.css">
+    <script src="examMaker.js"></script>
+           
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+ <body> 
+        <ul>
+  <li><a class="active" href="instructorPage.html">Home</a></li>
+  <li><a href="./exam.html">Exams</a></li>
+  <li><a href="./examReview.html">Post Grades</a></li>
+   <li><a href="./login.html">Logout</a></li>
+
+</ul>  
+<div class='container'>
+   
+  <div class='header'><h2>Instructor Portal</h2>
+
+</div>
+  <div class="body-container">
+    <div class='column1'>
+        <div class="filterHolder">
+                <br>
+          <div style="display:inline;" class="filerSeach">
+              <b>Search:</b><input class="finput" placeholder="Search Keywords" type="search" id="Search" name="Search" >
+              <select name = "filterD">
+                <option value = "">Difficulty</option>
+                <option value = "Easy">Easy</option>
+                <option value = "Medium">Medium</option>
+                <option value = "Hard">Hard</option>
+              </select>
+              <select name = "filterCA">
+                <option value = "">Categories</option>
+                <option value = "Methods">Methods</option>
+                <option value = "Loops">Loops</option>
+                <option value = "Arrays">Arrays</option>
+                <option value = "Dictionary">Dictionary</option>
+              </select>
+              <select name = "filterCS">
+                <option value = "">Constraints</option>
+                <option value = "For">For</option>
+                <option value = "While">While</option>
+                <option value = "Print">Print</option>
+                <option value = "Return">Return</option>
+              </select>
+          </div>
+        </div>
+        <div class="questionBank">
+        
+    
+        </div>
+        
+      </div>
+
+    <div class='column2'>View Exams
+      </div>
+  </div>
+
+</div>
+<script src="filterExam.js"></script>
+</body> 
+</html>

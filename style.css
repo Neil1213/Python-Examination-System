@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+}
+.login_container{
+  display: inline-block;
+}
+.header {
+  background: black url(./login_banner.jpg) center no-repeat;
+  padding: 5px;
+  text-align: left;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: aliceblue;
+  outline: black;
+  text-shadow: rgb(98, 98, 98) 1px 0px 0px,
+    rgb(98, 98, 98) 0.540302px 0.841471px 0px,
+    rgb(98, 98, 98) -0.416147px 0.909297px 0px,
+    rgb(98, 98, 98) -0.989992px 0.14112px 0px,
+    rgb(98, 98, 98) -0.653644px -0.756802px 0px,
+    rgb(98, 98, 98) 0.283662px -0.958924px 0px,
+    rgb(98, 98, 98) 0.96017px -0.279415px 0px;
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.29);
+  font-size: 50px;
+}
+
+.finput {
+  border-radius: 10px;
+  border: 0.5px solid #c3b7bc;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
+}
+.finput2 {
+  border-radius: 10px;
+  border: 0.5px solid #c3b7bc;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
+}
+.loginButton {
+  margin-top: 4px;
+  align-content: center;
+  margin-left: 80px;
+  background-color: #e22f2f;
+  opacity: 80;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#login_Text{
+    padding-left: 80px;
+}
